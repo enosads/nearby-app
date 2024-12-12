@@ -20,7 +20,7 @@ import dev.enosads.nearby.ui.theme.GreenBase
 import dev.enosads.nearby.ui.theme.Typography
 
 @Composable
-fun NearbyCategoryFilterChip(
+fun CategoryFilterChip(
     modifier: Modifier = Modifier,
     isSelected: Boolean,
     onClick: (isSelected: Boolean) -> Unit,
@@ -69,8 +69,8 @@ fun NearbyCategoryFilterChip(
 
 @Preview
 @Composable
-private fun NearbyCategoryFilterChipPreview() {
-    NearbyCategoryFilterChip(
+private fun CategoryFilterChipPreview() {
+    CategoryFilterChip(
         category = Category(
             id = "1",
             name = "Alimentação"
@@ -84,8 +84,8 @@ private fun NearbyCategoryFilterChipPreview() {
 
 @Preview
 @Composable
-private fun NearbyCategoryFilterChipNotSelectedPreview() {
-    NearbyCategoryFilterChip(
+private fun CategoryFilterChipNotSelectedPreview() {
+    CategoryFilterChip(
         category = Category(
             id="1",
             name = "Cinema"

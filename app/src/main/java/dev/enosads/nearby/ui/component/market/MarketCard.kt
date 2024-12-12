@@ -37,7 +37,7 @@ import dev.enosads.nearby.ui.theme.RedBase
 import dev.enosads.nearby.ui.theme.Typography
 
 @Composable
-fun NearbyMarketCard(
+fun MarketCard(
     modifier: Modifier = Modifier,
     market: Market,
     onClick: (Market) -> Unit
@@ -103,8 +103,8 @@ fun NearbyMarketCard(
 
 @Preview
 @Composable
-private fun NearbyMarketCardPreview() {
-    NearbyMarketCard(
+private fun MarketCardPreview() {
+    MarketCard(
         modifier = Modifier.fillMaxWidth(),
         market = Market(
             id = "1",

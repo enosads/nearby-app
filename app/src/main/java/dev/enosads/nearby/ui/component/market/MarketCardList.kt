@@ -13,7 +13,7 @@ import dev.enosads.nearby.data.model.mock.mockMarkets
 import dev.enosads.nearby.ui.theme.Typography
 
 @Composable
-fun NearbyMarketCardList(
+fun MarketCardList(
     modifier: Modifier = Modifier,
     markets: List<Market>,
     onMarketClick: (Market) -> Unit
@@ -26,15 +26,15 @@ fun NearbyMarketCardList(
             Text(text = "Explore locais perto de você", style = Typography.bodyLarge)
         }
         items(items = markets, key = { it.id }) { market ->
-            NearbyMarketCard(market = market, onClick = { onMarketClick(market)})
+            MarketCard(market = market, onClick = { onMarketClick(market)})
         }
     }
 }
 
 @Preview
 @Composable
-private fun NearbyMarketCardListPreview() {
-    NearbyMarketCardList(
+private fun MarketCardListPreview() {
+    MarketCardList(
         markets = mockMarkets,
         onMarketClick = {}
     )
