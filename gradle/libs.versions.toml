@@ -1,5 +1,5 @@
 [versions]
-agp = "8.8.0-rc01"
+agp = "8.8.0-rc02"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -41,7 +41,6 @@ ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serializatio
 ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging" }
 ktor-client-serialization = { group = "io.ktor", name = "ktor-client-serialization" }
 ktor-client-serialization-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json" }
-firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
